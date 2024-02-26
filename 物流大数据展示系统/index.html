@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物流大数据展示系统</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="navigation">
+    <div class="header">
+        <p class="p1">
+            <!--<img src="./images/guohui.png" alt="">-->
+        </p>
+        <p  class="p2"></p>
+        <p  class="p3">物流大数据展示系统</p>
+    </div>
+    <div class="contain">
+        <ul>
+            <li>
+                <a href="bigdata.html" target="_blank">
+                    <img src="./images/jinrong.png" alt="">
+                    <span>大数据展示系统</span>
+                </a>
+            </li>
+            <li>
+                <a href="survey.html" target="_blank">
+                    <img src="./images/xinyong.png" alt="">
+                    <span>物流数据概况系统</span>
+                </a>
+            </li>
+            <li>
+                <a href="index2.html" target="_blank">
+                    <img src="./images/fengxian.png" alt="">
+                    <span>物流订单系统</span>
+                </a>
+            </li>
+            <li>
+                <a href="index3.html" target="_blank">
+                    <img src="./images/chanye.png" alt="">
+                    <span>物流信息系统</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+<script>
+    window.onload = function(){
+        //屏蔽键盘事件
+        document.onkeydown = function (){
+            var e = window.event || arguments[0];
+            /*延迟，兼容FF浏览器  */
+            if(e.keyCode== 83 && e.ctrlKey){
+                setTimeout(function(){
+                    alert('整理不易，不要另存哦');
+                },1);
+                return false;
+            }else if(e.keyCode == 123){
+                //F12
+                setTimeout(function(){
+                    alert('亲，你想干嘛,不要做坏事哦');
+                },1);
+                return false;
+                //Ctrl+Shift+I
+            }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                setTimeout(function(){
+                    alert('亲，你想干嘛,不要做坏事哦');
+                },1);
+                return false;
+                //Shift+F10
+            }else if((e.shiftKey) && (e.keyCode == 121)){
+                setTimeout(function(){
+                    alert('亲，你想干嘛,不要做坏事哦');
+                },1);
+                return false;
+                //Ctrl+U
+            }else if((e.ctrlKey) && (e.keyCode == 85)){
+                setTimeout(function(){
+                    alert('亲，你想干嘛,不要做坏事哦');
+                },1);
+                return false;
+            }
+        };
+        //屏蔽鼠标右键
+        window.document.oncontextmenu = function (){
+            alert('亲，你想干嘛,不要做坏事哦');
+            return false;
+        }
+
+    }
+</script>
+</html>
